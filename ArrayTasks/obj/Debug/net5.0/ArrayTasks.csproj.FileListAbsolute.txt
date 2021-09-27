@@ -1,0 +1,16 @@
+D:\Natalia\Project1\Homework-Array\ArrayTasks\ArrayTasks\bin\Debug\net5.0\ArrayTasks.exe
+D:\Natalia\Project1\Homework-Array\ArrayTasks\ArrayTasks\bin\Debug\net5.0\ArrayTasks.deps.json
+D:\Natalia\Project1\Homework-Array\ArrayTasks\ArrayTasks\bin\Debug\net5.0\ArrayTasks.runtimeconfig.json
+D:\Natalia\Project1\Homework-Array\ArrayTasks\ArrayTasks\bin\Debug\net5.0\ArrayTasks.runtimeconfig.dev.json
+D:\Natalia\Project1\Homework-Array\ArrayTasks\ArrayTasks\bin\Debug\net5.0\ArrayTasks.dll
+D:\Natalia\Project1\Homework-Array\ArrayTasks\ArrayTasks\bin\Debug\net5.0\ref\ArrayTasks.dll
+D:\Natalia\Project1\Homework-Array\ArrayTasks\ArrayTasks\bin\Debug\net5.0\ArrayTasks.pdb
+D:\Natalia\Project1\Homework-Array\ArrayTasks\ArrayTasks\obj\Debug\net5.0\ArrayTasks.csproj.AssemblyReference.cache
+D:\Natalia\Project1\Homework-Array\ArrayTasks\ArrayTasks\obj\Debug\net5.0\ArrayTasks.GeneratedMSBuildEditorConfig.editorconfig
+D:\Natalia\Project1\Homework-Array\ArrayTasks\ArrayTasks\obj\Debug\net5.0\ArrayTasks.AssemblyInfoInputs.cache
+D:\Natalia\Project1\Homework-Array\ArrayTasks\ArrayTasks\obj\Debug\net5.0\ArrayTasks.AssemblyInfo.cs
+D:\Natalia\Project1\Homework-Array\ArrayTasks\ArrayTasks\obj\Debug\net5.0\ArrayTasks.csproj.CoreCompileInputs.cache
+D:\Natalia\Project1\Homework-Array\ArrayTasks\ArrayTasks\obj\Debug\net5.0\ArrayTasks.dll
+D:\Natalia\Project1\Homework-Array\ArrayTasks\ArrayTasks\obj\Debug\net5.0\ref\ArrayTasks.dll
+D:\Natalia\Project1\Homework-Array\ArrayTasks\ArrayTasks\obj\Debug\net5.0\ArrayTasks.pdb
+D:\Natalia\Project1\Homework-Array\ArrayTasks\ArrayTasks\obj\Debug\net5.0\ArrayTasks.genruntimeconfig.cache
