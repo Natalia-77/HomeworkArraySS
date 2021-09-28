@@ -10,18 +10,23 @@ namespace ArrayTasks
             int[] array1 = new int[5];
             int max =0;//max element first array.
             int max_mas = 0;//max element second array.         
-            int result = 0;
+            
+            int sum = 0;//sum of first array.
+            int sum1= 0;//sum second array.
+            int sum_even = 0;
+           
 
             int row = 4;
             int col = 3;
+
             Console.WriteLine("Enter numbers for array: ");
             for (int i = 0; i < 5; i++)
             {
                 array1[i] = int.Parse(Console.ReadLine());
             }
 
-            Console.WriteLine("One-dimensional array:");
 
+            Console.WriteLine("One-dimensional array:");
             foreach (var item in array1)
             {
                 Console.Write($"{item}  ");
@@ -38,7 +43,7 @@ namespace ArrayTasks
             {
                 for (int j = 0; j < col; j++)//col
                 {
-                    mas[i, j] = r.Next(0, 15); 
+                    mas[i, j] = r.Next(0, 10); 
                     Console.Write($"{mas[i, j]} ");
                 }
                 Console.WriteLine();
@@ -50,6 +55,12 @@ namespace ArrayTasks
                 {
                     max = array1[i];
                 }
+                sum1 += array1[i];
+                if(array1[i]%2==0)
+                {
+                    sum_even += array1[i];
+                }
+                
             }
             Console.WriteLine($"Max element of first array is: {max}");
 
@@ -61,6 +72,8 @@ namespace ArrayTasks
                     {
                         max_mas = mas[i, j];
                     }
+                    sum += mas[i, j];
+                    
                 }
             }
             Console.WriteLine($"Max element of second array is: {max_mas}");
@@ -71,47 +84,47 @@ namespace ArrayTasks
             {
                 for (int j = 0; j < col; j++)//col
                 {
+                   
                     for (int k = 0; k < array1.Length; k++)//one-dimensional
-                    {
-
+                    {                      
                         if (mas[i, j] == array1[k])
                         {
                             p++;
-                            temp[p] = mas[i, j];
+                            temp[p] = mas[i, j];                          
 
-                        }
-
+                        }                    
 
                     }
 
                 }
 
             }
-
-
               
             temp = temp.Where(a => a != 0).ToArray();
-            int res_min = temp[0];          
+            int res_min =temp[0];//minimum common element.
+            int res_max = temp[0];//maximum common element.
             for (int i = 1; i < temp.Length-1; i++)
             {
-                if (result < temp[i])
+                if (res_max < temp[i])
                 {
-                    result = temp[i];
+                    res_max = temp[i];
 
                 }
-                if (temp[i]<res_min)
+                if (temp[i] < res_min)
                 {
                     res_min = temp[i];
-
 
                 }
             }
             foreach (var item in temp)
             {
-                Console.Write(item+"  ");
+                Console.Write(item + "  ");
             }
-            Console.WriteLine($"Max common element is:{result}");
+            Console.WriteLine();
+            Console.WriteLine($"Max common element is:{res_max}");
             Console.WriteLine($"Min common element is:{res_min}");
+            Console.WriteLine($"Sum {sum+sum1}\n");
+            Console.WriteLine($"Sum even elements is:{sum_even}");
 
             
 
