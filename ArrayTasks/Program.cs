@@ -37,104 +37,61 @@ namespace ArrayTasks
                 Console.WriteLine();
                
             }
-            //for (int i = 0; i < array1.Length; i++)
-            //{
-            //    if (max < array1[i])
-            //    {
-            //        max = array1[i];
-            //    }
-            //}
-            //Console.WriteLine(max);
-
-            //for (int i = 0; i < row; i++)                
-            //{
-            //    for (int j = 0; j < col; j++)
-            //    {
-            //        if(max_mas<mas[i,j])
-            //        {
-            //            max_mas = mas[i, j];
-            //        }
-            //    }
-            //}
-            //Console.WriteLine(max_mas);          
-
-
-            int[][] arr3 = new int[row+1][];
-          
-            int rows = mas.GetUpperBound(0) + 1;
-            int columns = mas.Length / rows;
-
-            for (int i = 0; i < arr3.Length; i++)
-          
-                arr3[i] = new int[columns-2];
-          
-           
-            for (int i = 0; i < arr3.Length; i++)
-             {
-
-                    for (int y = 0; y < arr3[i].Length; y++)
-                    {
-                   
-
-                    if (i == 0)
-                    {
-                        //for (int s = 0; s < array1.Length; s++)
-                        //{
-
-                        //    arr3[i][y] = 222;
-
-
-                        //    Console.Write(arr3[i][y] + " ");
-                        //}
-
-                       
-                    }
-                    else
-                    {
-                        for (int q = 0; q < 3; q++)
-                        {
-                            arr3[i][y] = mas[i - 1, q];
-
-                            Console.Write(arr3[i][y] + " ");
-                        }
-
-                    }
-                    Console.WriteLine();
-
-                }
-
-                }
-
-
-
-
-
-
-            //int[][] array = new int[4][];
-            //for (int i = 0; i < array.Length; i++)
-            //    array[i] = new int[i + 3];
-            //Random rnd = new Random();
-            //for (int i = 0; i < array.Length; i++)
-            //{
-            //    for (int j = 0; j < array[i].Length; j++)
-            //        Console.Write("{0, 4}", array[i][j] = rnd.Next(0, 20));
-            //    Console.WriteLine();
-            //}
-
-
-
-
-
-            Console.WriteLine("=======================\n");
-
-            foreach (int[] arrItem in arr3)
+            for (int i = 0; i < array1.Length; i++)
             {
-                foreach (var i in arrItem)
+                if (max < array1[i])
                 {
-                    Console.Write(i + " ");
+                    max = array1[i];
                 }
-                Console.WriteLine();
             }
+            Console.WriteLine($"Max element of first array is: {max}");
+
+            for (int i = 0; i < row; i++)
+            {
+                for (int j = 0; j < col; j++)
+                {
+                    if (max_mas < mas[i, j])
+                    {
+                        max_mas = mas[i, j];
+                    }
+                }
+            }
+            Console.WriteLine($"Max element of second array is: {max_mas}");
+
+            int some_max = 0;
+            for (int i = 0; i < row; i++) // row
+            {
+                for (int j = 0; j < col; j++)//col
+                {
+                    for (int k = 0; k < array1.Length; k++)//one-dimensional
+                    {
+                        if(mas[i, j]==array1[k])
+                        {
+                            some_max = mas[i, j];
+                        }
+                    }                  
+                   
+                }                
+
+            }
+            Console.WriteLine($"Common max element is:{some_max}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
