@@ -38,13 +38,17 @@ namespace ArrayTasks
             int[,] mas = new int[row, col];
 
             Console.WriteLine("Two-dimensional array:");
-
+            int qwe = 0;
             for (int i = 0; i < row; i++) // row
             {
                 for (int j = 0; j < col; j++)//col
                 {
                     mas[i, j] = r.Next(0, 10); 
                     Console.Write($"{mas[i, j]} ");
+                    if (j % 2 == 0)
+                    {
+                        qwe += mas[i, j];
+                    }
                 }
                 Console.WriteLine();
 
@@ -56,6 +60,7 @@ namespace ArrayTasks
                     max = array1[i];
                 }
                 sum1 += array1[i];
+
                 if(array1[i]%2==0)
                 {
                     sum_even += array1[i];
@@ -125,6 +130,7 @@ namespace ArrayTasks
             Console.WriteLine($"Min common element is:{res_min}");
             Console.WriteLine($"Sum {sum+sum1}\n");
             Console.WriteLine($"Sum even elements is:{sum_even}");
+            Console.WriteLine($"Qwe {qwe}");
 
             
 
