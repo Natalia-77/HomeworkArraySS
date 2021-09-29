@@ -38,16 +38,16 @@ namespace ArrayTasks
             int[,] mas = new int[row, col];
 
             Console.WriteLine("Two-dimensional array:");
-            int qwe = 0;
+            int sum_evencol = 0;
             for (int i = 0; i < row; i++) // row
             {
                 for (int j = 0; j < col; j++)//col
                 {
                     mas[i, j] = r.Next(0, 10); 
                     Console.Write($"{mas[i, j]} ");
-                    if (j % 2 == 0)
+                    if (j % 2 == 0)//if column number is even.
                     {
-                        qwe += mas[i, j];
+                        sum_evencol += mas[i, j];//sum elements of this column.
                     }
                 }
                 Console.WriteLine();
@@ -130,9 +130,9 @@ namespace ArrayTasks
             Console.WriteLine($"Min common element is:{res_min}");
             Console.WriteLine($"Sum {sum+sum1}\n");
             Console.WriteLine($"Sum even elements is:{sum_even}");
-            Console.WriteLine($"Qwe {qwe}");
+            Console.WriteLine($"Qwe {sum_evencol}");
 
-            
+            //Існує два масиви розміром M і N відповідно. Загальні не повторювані елементи перших двох масивів повинні бути записані в третьому масиві.
 
 
 

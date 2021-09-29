@@ -1,0 +1,8 @@
+﻿Declare a one-dimensional array A consisting of 5 elements, and a two-dimensional
+array B consisting of 3 rows and 4 columns of fractional numbers.
+Fill a one-dimensional array with the numbers entered by the user, 
+and a two-dimensional array with random numbers using the loops. 
+Display the values of array A to a line, and the values of array B in 
+the form of a matrix. In these arrays, find a common maximal element, minimal element, 
+the sum of all elements, the product of all elements, the sum of even elements of the array A,
+the sum of odd columns of the array B.
