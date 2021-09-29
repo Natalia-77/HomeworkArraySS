@@ -8,130 +8,130 @@ namespace ArrayTasks
         static void Main(string[] args)
         {
             #region Array
-            //int[] array1 = new int[5];
-            //int max =0;//max element first array.
-            //int max_mas = 0;//max element second array.         
+            int[] array1 = new int[5];
+            int max = 0;//max element first array.
+            int max_mas = 0;//max element second array.         
 
-            //int sum = 0;//sum of first array.
-            //int sum1= 0;//sum second array.
-            //int sum_even = 0;
-
-
-            //int row = 4;
-            //int col = 3;
-
-            //Console.WriteLine("Enter numbers for array: ");
-            //for (int i = 0; i < 5; i++)
-            //{
-            //    array1[i] = int.Parse(Console.ReadLine());
-            //}
+            int sum = 0;//sum of first array.
+            int sum1 = 0;//sum second array.
+            int sum_even = 0;
 
 
-            //Console.WriteLine("One-dimensional array:");
-            //foreach (var item in array1)
-            //{
-            //    Console.Write($"{item}  ");
-            //}
-            //Console.WriteLine();
+            int row = 4;
+            int col = 3;
 
-            //Random r = new();
+            Console.WriteLine("Enter numbers for array: ");
+            for (int i = 0; i < 5; i++)
+            {
+                array1[i] = int.Parse(Console.ReadLine());
+            }
 
-            //int[,] mas = new int[row, col];
 
-            //Console.WriteLine("Two-dimensional array:");
-            //int sum_evencol = 0;
-            //for (int i = 0; i < row; i++) // row
-            //{
-            //    for (int j = 0; j < col; j++)//col
-            //    {
-            //        mas[i, j] = r.Next(0, 10); 
-            //        Console.Write($"{mas[i, j]} ");
-            //        if (j % 2 == 0)//if column number is even.
-            //        {
-            //            sum_evencol += mas[i, j];//sum elements of this column.
-            //        }
-            //    }
-            //    Console.WriteLine();
+            Console.WriteLine("One-dimensional array:");
+            foreach (var item in array1)
+            {
+                Console.Write($"{item}  ");
+            }
+            Console.WriteLine();
 
-            //}
-            //for (int i = 0; i < array1.Length; i++)
-            //{
-            //    if (max < array1[i])
-            //    {
-            //        max = array1[i];
-            //    }
-            //    sum1 += array1[i];
+            Random r = new();
 
-            //    if(array1[i]%2==0)
-            //    {
-            //        sum_even += array1[i];
-            //    }
+            int[,] mas = new int[row, col];
 
-            //}
-            //Console.WriteLine($"Max element of first array is: {max}");
+            Console.WriteLine("Two-dimensional array:");
+            int sum_evencol = 0;
+            for (int i = 0; i < row; i++) // row
+            {
+                for (int j = 0; j < col; j++)//col
+                {
+                    mas[i, j] = r.Next(0, 10);
+                    Console.Write($"{mas[i, j]} ");
+                    if (j % 2 == 0)//if column number is even.
+                    {
+                        sum_evencol += mas[i, j];//sum elements of this column.
+                    }
+                }
+                Console.WriteLine();
 
-            //for (int i = 0; i < row; i++)
-            //{
-            //    for (int j = 0; j < col; j++)
-            //    {
-            //        if (max_mas < mas[i, j])
-            //        {
-            //            max_mas = mas[i, j];
-            //        }
-            //        sum += mas[i, j];
+            }
+            for (int i = 0; i < array1.Length; i++)
+            {
+                if (max < array1[i])
+                {
+                    max = array1[i];
+                }
+                sum1 += array1[i];
 
-            //    }
-            //}
-            //Console.WriteLine($"Max element of second array is: {max_mas}");
+                if (array1[i] % 2 == 0)
+                {
+                    sum_even += array1[i];
+                }
 
-            //int[] temp = new int[mas.Length];
-            //int p = 0;
-            //for (int i = 0; i < row; i++) // row
-            //{
-            //    for (int j = 0; j < col; j++)//col
-            //    {
+            }
+            Console.WriteLine($"Max element of first array is: {max}");
 
-            //        for (int k = 0; k < array1.Length; k++)//one-dimensional
-            //        {                      
-            //            if (mas[i, j] == array1[k])
-            //            {
-            //                p++;
-            //                temp[p] = mas[i, j];                          
+            for (int i = 0; i < row; i++)
+            {
+                for (int j = 0; j < col; j++)
+                {
+                    if (max_mas < mas[i, j])
+                    {
+                        max_mas = mas[i, j];
+                    }
+                    sum += mas[i, j];
 
-            //            }                    
+                }
+            }
+            Console.WriteLine($"Max element of second array is: {max_mas}");
 
-            //        }
+            int[] temp = new int[mas.Length];
+            int p = 0;
+            for (int i = 0; i < row; i++) // row
+            {
+                for (int j = 0; j < col; j++)//col
+                {
 
-            //    }
+                    for (int k = 0; k < array1.Length; k++)//one-dimensional
+                    {
+                        if (mas[i, j] == array1[k])
+                        {
+                            p++;
+                            temp[p] = mas[i, j];
 
-            //}
+                        }
 
-            //temp = temp.Where(a => a != 0).ToArray();
-            //int res_min =temp[0];//minimum common element.
-            //int res_max = temp[0];//maximum common element.
-            //for (int i = 1; i < temp.Length-1; i++)
-            //{
-            //    if (res_max < temp[i])
-            //    {
-            //        res_max = temp[i];
+                    }
 
-            //    }
-            //    if (temp[i] < res_min)
-            //    {
-            //        res_min = temp[i];
+                }
 
-            //    }
-            //}
-            //foreach (var item in temp)
-            //{
-            //    Console.Write(item + "  ");
-            //}
-            //Console.WriteLine();
-            //Console.WriteLine($"Max common element is:{res_max}");
-            //Console.WriteLine($"Min common element is:{res_min}");
-            //Console.WriteLine($"Sum {sum+sum1}\n");
-            //Console.WriteLine($"Sum even elements is:{sum_even}");
-            //Console.WriteLine($"Qwe {sum_evencol}");
+            }
+
+            temp = temp.Where(a => a != 0).ToArray();
+            int res_min = temp[0];//minimum common element.
+            int res_max = temp[0];//maximum common element.
+            for (int i = 1; i < temp.Length - 1; i++)
+            {
+                if (res_max < temp[i])
+                {
+                    res_max = temp[i];
+
+                }
+                if (temp[i] < res_min)
+                {
+                    res_min = temp[i];
+
+                }
+            }
+            foreach (var item in temp)
+            {
+                Console.Write(item + "  ");
+            }
+            Console.WriteLine();
+            Console.WriteLine($"Max common element is:{res_max}");
+            Console.WriteLine($"Min common element is:{res_min}");
+            Console.WriteLine($"Sum {sum + sum1}\n");
+            Console.WriteLine($"Sum even elements is:{sum_even}");
+            Console.WriteLine($"Qwe {sum_evencol}");
 
             #endregion
 
@@ -146,7 +146,7 @@ namespace ArrayTasks
 
             //int[,] arr = new int[row,col];
             //int[,] arr1 = new int[row, col];         
-           
+
 
             //int[] arr_res = new int[10];
             //int[] arr_res2 = new int[10];
@@ -160,7 +160,7 @@ namespace ArrayTasks
             //int index4 = 0;
             //int index5 = 0;
             //bool flag = true;
-           
+
             //Random rand = new Random();
 
             ////first array
@@ -195,10 +195,10 @@ namespace ArrayTasks
             //    {
             //        arr_res[index++] = arr[i, j];                   
             //    }
-               
+
             //}
 
-           
+
             //for (int i = 0; i < arr1.GetLength(0); i++)
             //{
             //    for (int j = 0; j < arr1.GetLength(1); j++)
@@ -221,7 +221,7 @@ namespace ArrayTasks
             //        //Console.Write(arr_res[i] + ";");
             //        arr_res3[index3++] = arr_res[i];
             //}    
-                       
+
 
             //for (int i = 0; i < arr_res2.Length; i++)
             //{
@@ -276,7 +276,7 @@ namespace ArrayTasks
 
             Console.WriteLine("Enter the word:");
             string text_word = Console.ReadLine();
-            string result = string.Empty;            
+            string result = string.Empty;
             string reverce = string.Empty;
             result = result.ToLower();
             int index = result.Length - 1;
@@ -286,6 +286,30 @@ namespace ArrayTasks
             }
             //Console.WriteLine(reverce);
             Console.WriteLine(reverce != result ? "Not palindrom" : "Palindrom");
+
+            #endregion
+
+            #region Task4
+            //Дано двовимірний масив розміром 5x5,
+            //заповнений випадковими числами в діапазоні від -100 до 100.
+            //Визначте суму елементів масиву, розташованих між мінімальним і максимальним елементами.
+
+            int rows = 5;
+            int cols = 5;
+            int[,] arr_sum = new int[rows,cols];
+
+            Random random = new Random();
+            for (int i = 0; i < arr_sum.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr_sum.GetLength(1); j++)
+                {
+                    arr_sum[i,j] = random.Next(-20, 100);
+                    Console.Write(arr_sum[i,j]+" ");
+                }
+                Console.WriteLine();
+            }
+
+           
 
             #endregion
 
