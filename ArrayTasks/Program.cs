@@ -141,128 +141,153 @@ namespace ArrayTasks
 
             #region Task1
 
-            int row = 3;
-            int col = 3;
+            //int row = 3;
+            //int col = 3;
 
-            int[,] arr = new int[row,col];
-            int[,] arr1 = new int[row, col];         
+            //int[,] arr = new int[row,col];
+            //int[,] arr1 = new int[row, col];         
            
 
-            int[] arr_res = new int[10];
-            int[] arr_res2 = new int[10];
-            int[] arr_res3 = new int[10];
-            int[] arr_res4 = new int[10];
-            int[] arr_res5 = new int[25];
+            //int[] arr_res = new int[10];
+            //int[] arr_res2 = new int[10];
+            //int[] arr_res3 = new int[10];
+            //int[] arr_res4 = new int[10];
+            //int[] arr_res5 = new int[25];
 
-            int index = 0;
-            int index2 = 0;
-            int index3 = 0;
-            int index4 = 0;
-            int index5 = 0;
-            bool flag = true;
+            //int index = 0;
+            //int index2 = 0;
+            //int index3 = 0;
+            //int index4 = 0;
+            //int index5 = 0;
+            //bool flag = true;
            
-            Random rand = new Random();
+            //Random rand = new Random();
 
-            //first array
-            for (int i = 0; i < row; i++) // row
-            {
-                for (int j = 0; j < col; j++)//col
-                {
-                    arr[i, j] = rand.Next(0, 10);
-                    Console.Write($"{arr[i, j]} ");                   
-                }
-                Console.WriteLine();
-            }
-            Console.WriteLine("======================\n");
+            ////first array
+            //for (int i = 0; i < row; i++) // row
+            //{
+            //    for (int j = 0; j < col; j++)//col
+            //    {
+            //        arr[i, j] = rand.Next(0, 10);
+            //        Console.Write($"{arr[i, j]} ");                   
+            //    }
+            //    Console.WriteLine();
+            //}
+            //Console.WriteLine("======================\n");
 
-            //second array
-            for (int i = 0; i < row; i++) // row
-            {
-                for (int j = 0; j < col; j++)//col
-                {
-                    arr1[i, j] = rand.Next(0, 10);
-                    Console.Write($"{arr1[i, j]} ");
-                }
-                Console.WriteLine();
-            }
+            ////second array
+            //for (int i = 0; i < row; i++) // row
+            //{
+            //    for (int j = 0; j < col; j++)//col
+            //    {
+            //        arr1[i, j] = rand.Next(0, 10);
+            //        Console.Write($"{arr1[i, j]} ");
+            //    }
+            //    Console.WriteLine();
+            //}
 
 
 
-            Console.WriteLine("=========================\n");
-            for (int i = 0; i < arr.GetLength(0); i++)
-            {
-                for (int j = 0; j < arr.GetLength(1); j++)
-                {
-                    arr_res[index++] = arr[i, j];                   
-                }
+            //Console.WriteLine("=========================\n");
+            //for (int i = 0; i < arr.GetLength(0); i++)
+            //{
+            //    for (int j = 0; j < arr.GetLength(1); j++)
+            //    {
+            //        arr_res[index++] = arr[i, j];                   
+            //    }
                
-            }
+            //}
 
            
-            for (int i = 0; i < arr1.GetLength(0); i++)
-            {
-                for (int j = 0; j < arr1.GetLength(1); j++)
-                {
-                    arr_res2[index2++] = arr1[i, j];
-                }
+            //for (int i = 0; i < arr1.GetLength(0); i++)
+            //{
+            //    for (int j = 0; j < arr1.GetLength(1); j++)
+            //    {
+            //        arr_res2[index2++] = arr1[i, j];
+            //    }
 
-            }
+            //}
 
-            //unique elements first arr.
-            for (int i = 0; i < arr_res.Length; i++)
-            {
+            ////unique elements first arr.
+            //for (int i = 0; i < arr_res.Length; i++)
+            //{
 
-                flag = true;
-                for (int j = 1; j < i; j++)
-                    if (arr_res[i] == arr_res[j])
-                        flag = false;
-                if (flag)
+            //    flag = true;
+            //    for (int j = 1; j < i; j++)
+            //        if (arr_res[i] == arr_res[j])
+            //            flag = false;
+            //    if (flag)
 
-                    //Console.Write(arr_res[i] + ";");
-                    arr_res3[index3++] = arr_res[i];
-            }    
+            //        //Console.Write(arr_res[i] + ";");
+            //        arr_res3[index3++] = arr_res[i];
+            //}    
                        
 
-            for (int i = 0; i < arr_res2.Length; i++)
-            {
-                flag = true;
-                for (int j = 1; j < i; j++)
-                    if (arr_res2[i] == arr_res2[j])
-                        flag = false;
-                if (flag)
-                    // Console.Write(arr_res2[i] + ";");
-                    arr_res4[index4++] = arr_res2[i];
-            }
+            //for (int i = 0; i < arr_res2.Length; i++)
+            //{
+            //    flag = true;
+            //    for (int j = 1; j < i; j++)
+            //        if (arr_res2[i] == arr_res2[j])
+            //            flag = false;
+            //    if (flag)
+            //        // Console.Write(arr_res2[i] + ";");
+            //        arr_res4[index4++] = arr_res2[i];
+            //}
 
-            for (int i = 0; i < arr_res3.Length; i++)
-            {
-                Console.Write(arr_res3[i]+"  ");
-            }
-            Console.WriteLine();
-            for (int i = 0; i < arr_res4.Length; i++)
-            {
-                Console.Write(arr_res4[i]+" ");
-            }
+            //for (int i = 0; i < arr_res3.Length; i++)
+            //{
+            //    Console.Write(arr_res3[i]+"  ");
+            //}
+            //Console.WriteLine();
+            //for (int i = 0; i < arr_res4.Length; i++)
+            //{
+            //    Console.Write(arr_res4[i]+" ");
+            //}
 
-            for (int i = 0; i < arr_res3.Length; i++)
-            {
-                for (int j = 0; j < arr_res4.Length; j++)
-                {
-                    if(arr_res3[i]!=arr_res4[j])
-                    {                   
-                        arr_res5[index5++] = arr_res3[i];
-                    }
-                }
+            //for (int i = 0; i < arr_res3.Length; i++)
+            //{
+            //    for (int j = 0; j < arr_res4.Length; j++)
+            //    {
+            //        if(arr_res3[i]!=arr_res4[j])
+            //        {                   
+            //            arr_res5[index5++] = arr_res3[i];
+            //        }
+            //    }
 
-            }
+            //}
 
-            for (int i = 0; i < arr_res5.Length; i++)
-            {
-                Console.WriteLine(arr_res5[i]+" ");
-            }
+            //for (int i = 0; i < arr_res5.Length; i++)
+            //{
+            //    Console.WriteLine(arr_res5[i]+" ");
+            //}
 
             #endregion
 
+            #region Task2
+            Console.WriteLine("Enter the word:");
+            string word = Console.ReadLine();
+            string[] text = word.Split(new char[] { ' ' });
+
+            Console.WriteLine($"There are : {text.Length}  words in the text.");
+
+            #endregion
+
+            #region Task 3
+
+            Console.WriteLine("Enter the word:");
+            string text_word = Console.ReadLine();
+            string result = string.Empty;            
+            string reverce = string.Empty;
+            result = result.ToLower();
+            int index = result.Length - 1;
+            for (int i = index; i >= 0; i--)
+            {
+                reverce += result[i];
+            }
+            //Console.WriteLine(reverce);
+            Console.WriteLine(reverce != result ? "Not palindrom" : "Palindrom");
+
+            #endregion
 
 
 
